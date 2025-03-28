@@ -1,0 +1,16 @@
+package com.prodbill.prodBill.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Product {
+	
+	@Id
+	private int pid;
+	private String pname;
+	private double price;
+	private int qunatity;
+	private String description;
+	
+}

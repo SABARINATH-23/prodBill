@@ -1,0 +1,12 @@
+package com.prodbill.prodBill.model;
+
+public class Invoice {
+		
+	private int ino;
+	private String company_Address;
+	private String customer_Address;
+	private int quantity;
+	private double per_Item;
+	private double total_Amount;
+	
+}

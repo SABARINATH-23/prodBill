@@ -1,0 +1,26 @@
+package com.prodbill.prodBill.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.prodbill.prodBill.model.Product;
+import com.prodbill.prodBill.service.ProductService;
+
+
+@Controller
+@RestController
+public class ProductController {
+	
+	@Autowired
+	ProductService pservice;
+	
+	@PostMapping("/saveProduct")
+	public void Save(@RequestBody Product p)
+	{
+		pservice.Save(p);
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.prodbill.prodBill;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
+@SpringBootApplication
+@CrossOrigin("localhost:5173")
+public class ProdBillApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProdBillApplication.class, args);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.prodbill.prodBill.service;
+
+public class ProductService {
+
+}

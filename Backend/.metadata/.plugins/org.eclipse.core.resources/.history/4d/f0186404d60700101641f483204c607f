@@ -1,0 +1,21 @@
+package com.prodbill.prodBill.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.prodbill.prodBill.model.Product;
+import com.prodbill.prodBill.repo.ProductRepository;
+
+@Service
+public class ProductService {
+	
+	@Autowired
+	ProductRepository prepo;
+	
+	public void Save(Product p)
+	{
+		prepo.save(p);
+	}
+	
+
+}

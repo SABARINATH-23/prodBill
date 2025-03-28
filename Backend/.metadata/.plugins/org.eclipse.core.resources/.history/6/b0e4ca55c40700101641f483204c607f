@@ -1,0 +1,30 @@
+package com.prodbill.prodBill.model;
+
+import java.util.Date;
+import java.util.Set;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Invoice {
+	@Id
+	private int ino;
+	private String company_Address;
+	private String customer_Address;
+	@DateTimeFormat(pattern = "dd-MM-yyyy")
+	private Date date;
+	private int quantity;
+	private double per_Item;
+	private double total_Amount;
+	private Set<Product> product;
+	
+	
+	
+	
+	
+	
+	
+}

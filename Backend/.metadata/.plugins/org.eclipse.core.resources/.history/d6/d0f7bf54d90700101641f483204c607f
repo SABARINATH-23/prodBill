@@ -1,0 +1,60 @@
+package com.prodbill.prodBill.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.prodbill.prodBill.model.Product;
+import com.prodbill.prodBill.service.ProductService;
+
+
+@Controller
+@RestController
+@RequestMapping("/prodBill")
+public class ProductController {
+	
+	@Autowired
+	ProductService pservice;
+	
+	@PostMapping("/saveProduct")
+	public String Save(@RequestBody Product p)
+	{
+		pservice.Save(p);
+		return ("Data saved");
+	}
+	
+	@GetMapping("/getProduct/{id}")
+	public Product Fetch(@PathVariable int id)
+	{
+		return pservice.FetchById(id);
+	}
+	
+	
+	@GetMapping("/FetchAll")
+	public List<Product> FetchAllProduct()
+	{
+		return pservice.FetchAll();
+	}
+	
+	
+	
+	
+	@DeleteMapping("/deleteByid")
+	public String deleteByid(@RequestParam int i)
+	{
+		return pservice.DeleteByid(i);
+	}
+	
+	
+	
+
+}
