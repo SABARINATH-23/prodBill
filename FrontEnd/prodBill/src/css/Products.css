@@ -1,0 +1,151 @@
+.products
+{
+  margin-top: 30px;
+}
+.products > .product-Top
+{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  
+}
+.products > .product-Top > p
+{
+  font-size: 20px;
+  margin-left: 20px;  
+  padding: 10px;  
+}
+.products > .product-Top > a > button
+{
+  background-color: #5F8B4C;
+  padding: 10px;
+  width: 100px;
+  font-size: 18px;
+  height: 100%;
+  font-weight: bold;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right:10px ;
+}
+
+.table
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.allTable
+{
+  width: 85%;
+  padding: 20px;
+  text-align: center;
+}
+.tablehead > tr > th
+{
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #800080;
+  color: white;
+  text-transform: capitalize;
+}
+.btnAction
+{
+  width: 250px;
+}
+
+.tableData
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: black;
+  outline: 2px solid lightgray;
+
+}
+.tableBody:hover
+{
+  transition: all 2s ease;
+  padding: 20px;
+  background-color: #CBC3E3;
+}
+
+.actions
+{
+  outline: 2px solid lightgray;
+}
+
+.actions > a > button
+{
+  padding: 10px;
+  border-style: none; 
+  width: 80px;
+  text-transform: capitalize;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(0, 0, 255);
+}
+.actions>  button
+{
+  padding: 10px;
+  width: 80px;
+  border-style: none; 
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(255, 0, 0);
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent dark background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal{
+    background-color: #9a99e5;
+    padding: 20px;
+    height: 125px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .modal > p
+  {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  .modal > button
+  {
+    padding: 10px;
+    margin-left: 10px;
+    width: 80px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+
+  }
+  .modal > button:nth-last-child(1)
+  {
+    background-color:green;
+  }
+  .modal > button:nth-last-child(2)
+  {
+    background-color: red;
+  }
+
+  
