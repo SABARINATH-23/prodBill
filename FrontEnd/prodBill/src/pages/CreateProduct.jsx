@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import from '../css/ProductCreate.css';
 
 const CreateProduct = ()=>{
 
