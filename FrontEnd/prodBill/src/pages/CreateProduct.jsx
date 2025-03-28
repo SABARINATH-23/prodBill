@@ -1,7 +1,7 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import from '../css/ProductCreate.css';
+import '../css/ProductCreate.css';
 
 const CreateProduct = ()=>{
 
@@ -40,8 +40,11 @@ const CreateProduct = ()=>{
         productData(product);
     }
     return(
-        <>
-          <form onSubmit={handleSubmit}>
+        <div className="CreateProduct">
+          <form onSubmit={handleSubmit} className="form">
+                <div className="top">
+                    <p>Product Create Form</p>
+                </div>
                 <input type="text"  name="pname" placeholder="Product Name" onChange={handleInput}></input>
                 <input type="text"  name="price" placeholder="Enter Price" onChange={handleInput}></input>
                 <input type="tel"  name="quantity" placeholder="Enter Quantity" onChange={handleInput}></input>
@@ -49,7 +52,7 @@ const CreateProduct = ()=>{
                 <input type="text"  name="category" placeholder="Enter category" onChange={handleInput}></input>
                 <button> Submit </button>
           </form>
-        </>
+        </div>
     )
 
 
